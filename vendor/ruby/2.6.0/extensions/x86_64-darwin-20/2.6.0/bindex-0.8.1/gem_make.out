@@ -1,0 +1,15 @@
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211018-73860-180se49.rb extconf.rb
+creating Makefile
+
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20211018-73860-1jbnldt/skiptrace/internal
