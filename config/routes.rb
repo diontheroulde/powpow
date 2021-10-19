@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'welcome/index', as: 'homepage'
   get 'login', to: 'sessions#new', as: 'login' 
   post 'login', to: 'sessions#create'
   delete 'login', to: 'session#destroy' 
