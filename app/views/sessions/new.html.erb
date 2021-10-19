@@ -1,0 +1,21 @@
+<h2>Log in</h2>
+
+<%= form_for(:session, url: login_path) do |f| %>
+  
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :user_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+
+  <h3>Not signed up yet? <%=link_to "Signup", new_user_path %></h3>
+
+<% end %>
