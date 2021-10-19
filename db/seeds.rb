@@ -9,3 +9,7 @@
 15.times do 
   Instructor.create(name: Faker::Name.name)
 end
+
+ski = Activity.create(activity: "Ski")
+snowboard = Activity.create(activity: "Snowboard")
+tubing = Activity.create(activity: "Tubing")
