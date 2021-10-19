@@ -10,38 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_145124) do
+ActiveRecord::Schema.define(version: 2021_10_19_182053) do
 
-  create_table "characters", force: :cascade do |t|
+  create_table "instructors", force: :cascade do |t|
     t.string "name"
-    t.string "description"
-    t.string "origin"
-    t.string "powers"
-    t.string "appearances"
-    t.string "character_enemies"
-    t.string "character_friends"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "issues", force: :cascade do |t|
+  create_table "lessons", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "character_id"
-    t.string "title"
-    t.string "description"
-    t.string "cover_date"
+    t.integer "instructor_id"
+    t.datetime "lesson_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_name"
     t.string "first_name"
     t.string "last_name"
+    t.string "username"
     t.string "password"
+    t.string "password_confirmation"
+    t.boolean "snowboard", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "password_confirmation"
   end
 
 end
