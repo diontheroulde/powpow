@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_10_19_202748) do
 
   create_table "activities", force: :cascade do |t|
-    t.string "activity"
+    t.string "name"
     t.integer "user_id"
     t.integer "instructor_id"
     t.datetime "created_at", precision: 6, null: false

@@ -1,3 +1,21 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.signup-form {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  color: white;
+}
+
+h1 {
+  font-size: 100px !important;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+}

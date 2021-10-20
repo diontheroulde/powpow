@@ -1,40 +1,69 @@
-<h2>Sign up</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      PowPow
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color:#81a6d0;">
 
-<%= form_for @user do |f| %>
-  
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </div>
+    <div class="title">
+      <h1>PowPow</h1>
+    </div>
 
-  <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name %>
-  </div>
+  <div class="homepage-container">
+    <div class="homepage-img">
+      <iframe src="https://giphy.com/embed/KLBtzN8F8PAhuNWHoc" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <div class="signup-form">
+      <h2>Sign up</h2>
+        <%= form_for @user do |f| %>
+          
+          <div class="field">
+            <%= f.label :username %><br />
+            <%= f.text_field :username %>
+          </div>
 
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name %>
-  </div>
+          <div class="field">
+            <%= f.label :first_name %><br />
+            <%= f.text_field :first_name %>
+          </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
+          <div class="field">
+            <%= f.label :last_name %><br />
+            <%= f.text_field :last_name %>
+          </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password %>
+          </div>
 
-  <div class="field">
-    <%= f.label "Ski or Snowboard?" %><br />
-    <%= f.select  %>
-  </div>
+          <div class="field">
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation %>
+          </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-  <h3>Already have an account?<%= link_to "Log in", login_path %></h3>
+          <div class="field">
+            <%= f.label "Which activity do you prefer?" %><br />
+            <%= f.select :activity_ids, [ 'Snowboard', 'Ski', 'Tubing' ], :prompt => 'Select One' %>
+          </div>
 
-<% end %>
+          <div class="actions">
+            <%= f.submit "Sign up" %>
+          </div>
+          <h3>Already have an account?<%= link_to "Log in", login_path %></h3>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
