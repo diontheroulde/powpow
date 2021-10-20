@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_10_19_202748) do
     t.string "username"
     t.string "password"
     t.string "password_confirmation"
+    t.string "password_digest"
     t.boolean "snowboard", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

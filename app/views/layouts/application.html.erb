@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ComicQuery</title>
+    <title>PowPow</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,8 +11,42 @@
   </head>
 
   <body>
-  <p class = "notice" ><%= notice %> </p>
-  <p class = "alert" ><%= alert %></p>
+    <p class = "notice" ><%= notice %> </p>
+    <p class = "alert" ><%= alert %></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PowPow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lessons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resorts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Whistler Blackcomb</a></li>
+              <li><a class="dropdown-item" href="#">Courchevel</a></li>
+              <li><a class="dropdown-item" href="#">Zermatt</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Profile", user_path(session[:user_id]), class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <%= yield %>
   </body>
 </html>

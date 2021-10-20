@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   get 'welcome/index', as: 'homepage'
+  get "signup", to: "users#new"
   get 'login', to: 'sessions#new', as: 'login' 
   post 'login', to: 'sessions#create'
-  delete 'login', to: 'session#destroy' 
+  delete 'logout', to: 'session#destroy' 
   resources :instructors
   resources :lessons
   resources :users

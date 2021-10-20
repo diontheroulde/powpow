@@ -5,13 +5,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(user_name: params[:session][:user_name])
-    if @user && @user.authenticate(params[:session][:password])
-      log_in @user
-      redirect_to homepage_path
-    else
-      render 'new'
-    end
+    @user = User.find_by(username: params[:session][:username])
+    return head(:forbidden) unless @user.authenticate(params[:session][:password])
+    session[:user_id] = @user.id
+    redirect_to homepage_path
   end
 
   def delete
