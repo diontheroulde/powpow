@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @user.activities.build
   end
 
   private 

@@ -45,10 +45,15 @@
           </div>
 
           <div class="field">
-            <%= f.label "Which activity do you prefer?" %>
-            <%= f.select :activity_ids, [ 'Snowboard', 'Ski', 'Tubing' ], :prompt => 'Select One', class: "form-control"%>
+          <span>Activities:</span>
+            <%= f.fields_for :activities do |ff| %>
+              <%= ff.label :name %>
+              <%= ff.text_field :name %>
+            <% end %>
           </div>
-
+        
+          <%= f.collection_check_boxes :activity_ids, Activity.all, :id, :name.uniq %>
+          
           <div class="actions">
             <%= f.submit "Sign up" %>
           </div>
