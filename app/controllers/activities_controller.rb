@@ -4,7 +4,7 @@ class ActivitiesController < ApplicationController
   end
 
   def new
-    @activity = Activity.new
+    @activity = Activity.new(instructor_id: params[:instructor_id])
   end
 
   def create

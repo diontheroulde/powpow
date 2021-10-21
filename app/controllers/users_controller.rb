@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   
+  def index
+    @users = User.all
+  end
+
   def show
     @user = User.find(params[:id])
   end
@@ -20,6 +24,13 @@ class UsersController < ApplicationController
   private 
 
   def user_params
-    params.require(:user).permit(:id, :username, :first_name, :last_name, :password, :password_confirmation)
+    params.require(:user).permit(
+      :id, 
+      :username, 
+      :first_name, 
+      :last_name, 
+      :password, 
+      :password_confirmation,
+      activities_attributes: [:id, :name, :lesson_time, :instructor_id, :user_id])
   end
 end

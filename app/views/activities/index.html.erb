@@ -1,34 +1,17 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Student</th>
-      <th scope="col">Activity</th>
-      <th scope="col">Instructor</th>
-      <th scope="col">Date</th>
+      <th class="table-header" colspan="4">Schedule</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row"></th>
-      
-        <% @activities.each do |activity| %>
-          <td><%= activity.user_full_name %></td> 
-        <% end %>
-      <td></td>
-      
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.user_full_name %></td>
+        <td><%= activity.name %></td>
+        <td><%= activity.instructor.name %></td>
+        <td><%= activity.lesson_time.strftime("%d/%m/%Y") %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
