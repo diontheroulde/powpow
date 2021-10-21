@@ -10,26 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_19_202748) do
+ActiveRecord::Schema.define(version: 2021_10_20_153350) do
 
   create_table "activities", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
     t.integer "instructor_id"
+    t.datetime "lesson_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "instructors", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "lessons", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "instructor_id"
-    t.datetime "lesson_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -41,7 +34,6 @@ ActiveRecord::Schema.define(version: 2021_10_19_202748) do
     t.string "password"
     t.string "password_confirmation"
     t.string "password_digest"
-    t.boolean "snowboard", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

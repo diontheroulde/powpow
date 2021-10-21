@@ -10,6 +10,20 @@
   Instructor.create(name: Faker::Name.name)
 end
 
-ski = Activity.create(activity: "Ski")
-snowboard = Activity.create(activity: "Snowboard")
-tubing = Activity.create(activity: "Tubing")
+15.times do
+  ski = Activity.create(name: "Ski", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%d/%m/%Y"), user_id: rand(1..15), instructor_id: rand(1..15))
+  snowboard = Activity.create(name: "Snowboard", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%d/%m/%Y"), user_id: rand(1..15), instructor_id: rand(1..15))
+  tubing = Activity.create(name: "Tubing", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%d/%m/%Y"), user_id: rand(1..15), instructor_id: rand(1..15))
+end
+
+(1..15).each do |id|
+  first_name = Faker::Name.first_name
+  last_name = Faker::Name.last_name
+  user = User.create!( 
+  first_name: first_name,
+  last_name: last_name,
+  password: "password", 
+  password_confirmation: "password"
+)
+end
+

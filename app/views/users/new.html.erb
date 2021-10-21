@@ -25,33 +25,28 @@
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           
           <div class="field">
-            <%= f.label :username %><br />
-            <%= f.text_field :username %>
+            <%= f.text_field :username, class: "form-control", placeholder: "Username" %>
           </div>
 
           <div class="field">
-            <%= f.label :first_name %><br />
-            <%= f.text_field :first_name %>
+            <%= f.text_field :first_name, class: "form-control", placeholder: "First Name" %>
           </div>
 
           <div class="field">
-            <%= f.label :last_name %><br />
-            <%= f.text_field :last_name %>
+            <%= f.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
           </div>
 
           <div class="field">
-            <%= f.label :password %><br />
-            <%= f.password_field :password %>
+            <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
           </div>
 
           <div class="field">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation %>
+            <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password Confirmation" %>
           </div>
 
           <div class="field">
-            <%= f.label "Which activity do you prefer?" %><br />
-            <%= f.select :activity_ids, [ 'Snowboard', 'Ski', 'Tubing' ], :prompt => 'Select One' %>
+            <%= f.label "Which activity do you prefer?" %>
+            <%= f.select :activity_ids, [ 'Snowboard', 'Ski', 'Tubing' ], :prompt => 'Select One', class: "form-control"%>
           </div>
 
           <div class="actions">

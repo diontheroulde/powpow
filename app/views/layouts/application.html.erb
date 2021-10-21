@@ -28,20 +28,21 @@
             <a class="nav-link" href="#">Lessons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <%= link_to "Pricing", prices_path, class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Resorts
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Whistler Blackcomb</a></li>
-              <li><a class="dropdown-item" href="#">Courchevel</a></li>
-              <li><a class="dropdown-item" href="#">Zermatt</a></li>
-            </ul>
+            <select class="nav-link dropdown-toggle" aria-labelledby="navbarDropdownMenuLink" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <option>Choose Resort</option>
+              <option class="dropdown-item" value="">Whistler Blackcomb</option>
+              <option class="dropdown-item" value="1">Courchevel</option>
+              <option  value="2">Zermatt</option>
+            </select>
           </li>
           <li class="nav-item">
             <%= link_to "Profile", user_path(session[:user_id]), class: "nav-link" %>
+          </li>
+          <li class="nav-item tr">
+            <a class="nav-link" href="#">Log Out</a>
           </li>
         </ul>
       </div>
@@ -50,3 +51,5 @@
     <%= yield %>
   </body>
 </html>
+
+    
