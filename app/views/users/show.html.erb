@@ -1,12 +1,22 @@
 
-<h1><%= @user.full_name %></h1>
+<h1><%= @user.full_name %></h1><br>
 
-<% @user.instructors.each do |instructor| %>
-  <h2><%= instructor.name %></h2><br>
-<% end %>
+<div class="list-container">
+  <div class="user-instructors">
+    <h2>Instructors:</h2><br>
+    <ul>
+      <% @user.instructors.each do |instructor| %>
+        <li><%= instructor.name %></li><br>
+      <% end %>
+    </ul>
+  </div>
 
-<% @user.activities.each do |activity| %>
-  <h2><%= activity.name %></h2>
-<% end %>
-
-
+  <div class="activity-list">
+    <h2>Activities:</h2><br>
+    <ul>
+      <% @user.activities.each do |activity| %>
+        <li><%= activity.name %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

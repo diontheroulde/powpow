@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to login_path
     else
-      flash[:notice]
+      flash[:notice] = "Somethings Wrong!"
       render :new
     end
   end

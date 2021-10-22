@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* A user can signup, login and logout.
 
-Things you may want to cover:
+* Username and Password fields have validations in order to signup.
 
-* Ruby version
+* Users have the ability to go to the schedule and signup for an activity and instructor of their choosing as well as pick a time.
 
-* System dependencies
+* Users can look at the list of instructors and can click on an instructor to see their students. Users can further click on a students name to see that students activities and instructors.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Users can visit their profile page to see a list of their own instructors and activities.

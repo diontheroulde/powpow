@@ -26,7 +26,7 @@
             <div class="error-header">
               <h2 class="error"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
             </div>
-            <ul>
+            <ul class="list-errors">
               <% @user.errors.each do |error| %>
                 <li><%= error.full_message %></li>
               <% end %>
