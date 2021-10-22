@@ -9,8 +9,11 @@ class ActivitiesController < ApplicationController
   end
 
   def create
-    @activity = Activity.new(activity_params)
+    user = User.find(session[:user_id])
+    @activity = user.activities.new(activity_params)
+    add_instructor_to_activity
     @activity.save
+    redirect_to activities_path
   end
 
   private
@@ -19,8 +22,22 @@ class ActivitiesController < ApplicationController
     params.require(:activity).permit(
       :id,
       :name,
-      :lesson_time,
-      instructor_attributes: [:id, :name]
+      :lesson_time
     )
+  end
+
+  def add_instructor_to_activity
+    if params[:instructors][:name].present?
+      instructor = Instructor.create(name: params[:instructors][:name])
+    else
+      instructor = Instructor.find(params[:activity][:instructor_id])
+    end
+    # if we have a new instructor name
+    #  create the instructor
+    # else
+    #  find the instructor from params
+    # end
+    # add instructor to activity
+    @activity.instructor = instructor
   end
 end

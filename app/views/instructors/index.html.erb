@@ -1,7 +1,8 @@
 <h1>Instructors</h1>
-
-<ul>
-  <% @instructors.each do |instructor| %>
-    <li><%= link_to instructor.name, instructor_path(instructor) %></li>
-  <% end %>
-</ul>
+<div class="instructor-list">
+  <ul>
+    <% @instructors.each do |instructor| %>
+      <li><%= link_to instructor.name, instructor_path(instructor) %></li>
+    <% end %>
+  </ul>
+</div>

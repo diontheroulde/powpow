@@ -14,24 +14,24 @@
       <h1>PowPow</h1>
     </div>
 
-  <div class="homepage-container">
-    <div class="homepage-img">
-      <iframe src="https://giphy.com/embed/KLBtzN8F8PAhuNWHoc" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
-    <div class="signup-form">
-      <h2>Sign up</h2>
+    <div class="homepage-container">
+      <div class="homepage-img">
+        <iframe src="https://giphy.com/embed/KLBtzN8F8PAhuNWHoc" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <div class="signup-form">
+        <h2>Sign up</h2>
         <%= form_for @user do |f| %>
           <% if @user.errors.any? %>
-            <div id="error_explanation" class="field-with-errors">
-              <div class="error-header">
-                <h2 class="error"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-              </div>
-              <ul>
-                <% @user.errors.each do |error| %>
-                  <li><%= error.full_message %></li>
-                <% end %>
-              </ul>
+          <div id="error_explanation" class="field-with-errors">
+            <div class="error-header">
+              <h2 class="error"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
             </div>
+            <ul>
+              <% @user.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
           <% end %>
 
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>

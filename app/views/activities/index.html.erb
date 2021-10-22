@@ -1,3 +1,5 @@
+
+
 <table class="table">
   <thead>
     <tr>
@@ -6,10 +8,10 @@
   </thead>
   <tbody>
     <tr>
-        <th>Student</th>
-        <th>Activity</th>
-        <th>Instructor</th>
-        <th>Lesson Time</th>
+        <th><h2>Student</h2></th>
+        <th><h2>Activity</h2></th>
+        <th><h2>Instructor</h2></th>
+        <th><h2>Lesson Time</h2></th>
       </tr>
     <% @activities.each do |activity| %>
       <tr>
@@ -21,3 +23,7 @@
     <% end %>
   </tbody>
 </table>
+
+<div class="create-activity">
+  <h3><%= link_to "Create Activity", new_activity_path %></h3>
+</div>

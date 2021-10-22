@@ -1,25 +1,29 @@
-<%= form_for @activity do |form| %>
-   <div class="field">
-      <%= form.label :name %><br />
-      <%= form.text_field :name %>
-    </div>
+<h1>Create Activity</h1>
 
+<div class="new-form">
+  <%= form_for @activity do |form| %>
     <div class="field">
-      <%= form.label :lesson_time %><br />
-      <%= form.password_field :lesson_time %>
-    </div>
+        <%= form.label :name %><br />
+        <%= form.text_field :name %>
+      </div>
 
-    <div class="field">
-    <span>Instructors:</span>
-      <% fields_for :instructors do |ff|  %>
-        <%= ff.label :name %>
-        <%= ff.text_field :name %>
-      <% end%>
-    </div>
+      <div class="field">
+        <%= form.label :lesson_time %><br />
+        <%= form.datetime_field :lesson_time %>
+      </div>
 
-    <%= form.collection_check_boxes :instructor_id, Instructor.all, :id, :name %>
+      <div class="field">
+      <span>Instructors:</span>
+        <%= fields_for :instructors do |ff|  %>
+          <%= ff.label :name %>
+          <%= ff.text_field :name %>
+        <% end%>
+      </div>
 
-    <div class="actions">
-      <%= form.submit "Create Instructor" %>
-    </div>
-<% end %>
+      <%= form.collection_select :instructor_id, Instructor.all, :id, :name %>
+
+      <div class="actions">
+        <%= form.submit "Create" %>
+      </div>
+  <% end %>
+</div>

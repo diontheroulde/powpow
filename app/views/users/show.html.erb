@@ -1,2 +1,12 @@
-<%# <% binding.pry %> 
+
 <h1><%= @user.full_name %></h1>
+
+<% @user.instructors.each do |instructor| %>
+  <h2><%= instructor.name %></h2><br>
+<% end %>
+
+<% @user.activities.each do |activity| %>
+  <h2><%= activity.name %></h2>
+<% end %>
+
+
