@@ -20,7 +20,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @user.activities.build
   end
 
   private 
@@ -32,7 +31,7 @@ class UsersController < ApplicationController
       :first_name, 
       :last_name, 
       :password, 
-      :password_confirmation,
-      activities_attributes: [:id, :name, :lesson_time, :instructor_id, :user_id, :activity_ids])
+      :password_confirmation
+    )
   end
 end

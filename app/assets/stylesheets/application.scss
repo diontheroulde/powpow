@@ -21,10 +21,20 @@
   }
 
   body {
-    background-color:#81a6d0
+    /* The image used */
+    background-image: image-url("GettyImages-469835930_high.jpeg");
+    // background-size: 2000px 1000px; 
+    // background-repeat: no-repeat;
+    /* Add the blur effect */
+    // filter: blur(8px);
+    // -webkit-filter: blur(8px);
   }
 
   .navbar-brand {
     font-family: 'Libre Barcode 128 Text', cursive;
     font-size: 40px;
   }
+
+  
+
+  

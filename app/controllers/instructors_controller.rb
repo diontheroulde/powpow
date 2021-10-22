@@ -6,4 +6,9 @@ class InstructorsController < ApplicationController
   def show 
     @instructor = Instructor.find(params[:id])
   end
+
+  def new
+    @instructor = Instructor.new
+    @instructor.activities.build
+  end
 end

@@ -22,8 +22,10 @@
       <h2>Sign up</h2>
         <%= form_for @user do |f| %>
           <% if @user.errors.any? %>
-            <div id="error_explanation">
-              <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+            <div id="error_explanation" class="field-with-errors">
+              <div class="error-header">
+                <h2 class="error"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+              </div>
               <ul>
                 <% @user.errors.each do |error| %>
                   <li><%= error.full_message %></li>
@@ -54,16 +56,6 @@
             <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password Confirmation" %>
           </div>
 
-          <div class="field">
-          <%# <span>Activities:</span>
-            <%= f.fields_for :activities do |ff| %>
-              <%# <%= ff.label :name %> 
-              <%# <%= ff.text_field :name %> 
-            <%# <% end %> 
-          </div>
-        
-          <%# <%= f.collection_check_boxes :activity_ids, Activity.all, :id, :name %> 
-          
           <div class="actions">
             <%= f.submit "Sign up" %>
           </div>

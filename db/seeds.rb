@@ -11,9 +11,9 @@
 end
 
 15.times do
-  ski = Activity.create(name: "Ski", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
-  snowboard = Activity.create(name: "Snowboard", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
-  tubing = Activity.create(name: "Tubing", lesson_time: Faker::Date.between(from: 2.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
+  ski = Activity.create(name: "Ski", lesson_time: Faker::Date.between(from: 4.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
+  snowboard = Activity.create(name: "Snowboard", lesson_time: Faker::Date.between(from: 4.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
+  tubing = Activity.create(name: "Tubing", lesson_time: Faker::Date.between(from: 4.days.ago, to: Date.today).strftime("%B %d, %Y at %-l%P"), user_id: rand(1..15), instructor_id: rand(1..15))
 end
 
 (1..15).each do |id|
