@@ -21,6 +21,16 @@
     <div class="signup-form">
       <h2>Sign up</h2>
         <%= form_for @user do |f| %>
+          <% if @user.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+              <ul>
+                <% @user.errors.each do |error| %>
+                  <li><%= error.full_message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
 
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           
@@ -45,19 +55,19 @@
           </div>
 
           <div class="field">
-          <span>Activities:</span>
+          <%# <span>Activities:</span>
             <%= f.fields_for :activities do |ff| %>
-              <%= ff.label :name %>
-              <%= ff.text_field :name %>
-            <% end %>
+              <%# <%= ff.label :name %> 
+              <%# <%= ff.text_field :name %> 
+            <%# <% end %> 
           </div>
         
-          <%= f.collection_check_boxes :activity_ids, Activity.all, :id, :name.uniq %>
+          <%# <%= f.collection_check_boxes :activity_ids, Activity.all, :id, :name %> 
           
           <div class="actions">
             <%= f.submit "Sign up" %>
           </div>
-          <h3>Already have an account?<%= link_to "Log in", login_path %></h3>
+          <h3>Already have an account? <%= link_to "Log in", login_path %></h3>
         <% end %>
       </div>
     </div>

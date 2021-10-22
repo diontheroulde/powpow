@@ -1,7 +1,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th class="table-header" colspan="4">Schedule</th>
+      <th class="table-header" colspan="4"><strong>Schedule</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -10,7 +10,7 @@
         <td><%= activity.user_full_name %></td>
         <td><%= activity.name %></td>
         <td><%= activity.instructor.name %></td>
-        <td><%= activity.lesson_time.strftime("%d/%m/%Y") %></td>
+        <td><%= activity.lesson_time.strftime("%B %d, %Y at %-l%P") %></td>
       </tr>
     <% end %>
   </tbody>

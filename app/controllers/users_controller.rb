@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to login_path
     else
+      flash[:notice]
       render :new
     end
   end
@@ -32,6 +33,6 @@ class UsersController < ApplicationController
       :last_name, 
       :password, 
       :password_confirmation,
-      activities_attributes: [:id, :name, :lesson_time, :instructor_id, :user_id])
+      activities_attributes: [:id, :name, :lesson_time, :instructor_id, :user_id, :activity_ids])
   end
 end
