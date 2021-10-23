@@ -1,5 +1,6 @@
-
+<div class="show-title">
 <h1><%= @user.full_name %></h1><br>
+</div>
 
 <div class="list-container">
   <div class="user-instructors">
@@ -19,4 +20,8 @@
       <% end %>
     </ul>
   </div>
+</div>
+
+<div class="create-activity">
+  <h3><%= link_to "Create Activity", new_activity_path %></h3>
 </div>
