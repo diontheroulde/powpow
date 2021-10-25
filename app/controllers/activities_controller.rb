@@ -27,11 +27,11 @@ class ActivitiesController < ApplicationController
   end
 
   def add_instructor_to_activity
-    if params[:instructors][:name].present?
-      instructor = Instructor.create(name: params[:instructors][:name])
-    else
-      instructor = Instructor.find(params[:activity][:instructor_id])
-    end
+    instructor = if params[:instructors][:name].present?
+                   Instructor.create(name: params[:instructors][:name])
+                 else
+                   Instructor.find(params[:activity][:instructor_id])
+                 end
     # if we have a new instructor name
     #  create the instructor
     # else

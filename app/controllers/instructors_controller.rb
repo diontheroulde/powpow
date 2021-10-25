@@ -1,9 +1,9 @@
 class InstructorsController < ApplicationController
-  def index 
+  def index
     @instructors = Instructor.all
   end
 
-  def show 
+  def show
     @instructor = Instructor.find(params[:id])
   end
 

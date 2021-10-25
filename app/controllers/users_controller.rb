@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  
   def index
     @users = User.all
   end
@@ -7,13 +6,13 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
   end
-  
+
   def create
     @user = User.new(user_params)
     if @user.save
       redirect_to login_path
     else
-      flash[:notice] = "Somethings Wrong!"
+      flash[:notice] = 'Somethings Wrong!'
       render :new
     end
   end
@@ -22,15 +21,15 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  private 
+  private
 
   def user_params
     params.require(:user).permit(
-      :id, 
-      :username, 
-      :first_name, 
-      :last_name, 
-      :password, 
+      :id,
+      :username,
+      :first_name,
+      :last_name,
+      :password,
       :password_confirmation
     )
   end

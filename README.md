@@ -1,5 +1,7 @@
 # README
 
+# PowPow: A website where users can log in and signup for activities
+
 * A user can signup, login and logout.
 
 * Username and Password fields have validations in order to signup.
@@ -8,4 +10,12 @@
 
 * Users can look at the list of instructors and can click on an instructor to see their students. Users can further click on a students name to see that students activities and instructors.
 
-*Users can visit their profile page to see a list of their own instructors and activities.
+* Users can visit their profile page to see a list of their own instructors and activities.
+
+# Install
+
+To install, clone the repository and run 'bundle install'
+
+
+
+
