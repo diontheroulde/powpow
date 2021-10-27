@@ -1,6 +1,8 @@
 class ActivitiesController < ApplicationController
+  before_action :ensure_signed_in
+  
   def index
-    @activities = Activity.all
+    # @activities = Activity.all
   end
 
   def new
@@ -17,6 +19,10 @@ class ActivitiesController < ApplicationController
   end
 
   private
+
+  helper_method def activities
+    @activities ||= Activity.all
+  end
 
   def activity_params
     params.require(:activity).permit(

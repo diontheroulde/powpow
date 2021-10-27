@@ -1,4 +1,6 @@
 class InstructorsController < ApplicationController
+  before_action :ensure_signed_in
+  
   def index
     @instructors = Instructor.all
   end

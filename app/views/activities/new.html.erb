@@ -16,7 +16,7 @@
       <span>Instructors:</span>
         <%= fields_for :instructors do |ff|  %>
           <%= ff.label :name %>
-          <%= ff.text_field :name %>
+          <%= ff.collection_select :instructor_id, Instructor.all, :id, :name, prompt: true %>
         <% end%>
       </div>
 

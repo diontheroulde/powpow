@@ -2,8 +2,9 @@ class CreateActivities < ActiveRecord::Migration[6.1]
   def change
     create_table :activities do |t|
       t.string :name
-      t.integer :user_id
-      t.integer :instructor_id
+      t.references :user
+      t.references :instructor
+
       t.datetime :lesson_time
 
       t.timestamps
