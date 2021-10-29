@@ -25,7 +25,7 @@ RSpec.describe UsersController, type: :controller do
 
       expect(response.status).to eq 200
     end
-   end
+  end
 
   describe "POST #create" do
     describe "with valid attributes" do 
