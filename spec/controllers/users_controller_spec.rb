@@ -10,21 +10,21 @@ RSpec.describe UsersController, type: :controller do
       expect(response).to render_template(:show)
     end
 
-  #   it "assigns @check_in to the correct instance" do
-  #     check_in = create_check_in
+    it "assigns @user to the correct instance" do
+      user = create_user
 
-  #     get :show, params: valid_user_params, session: { user_id: 1 }
+      get :show, params: { id: user.id}, session: { user_id: 1 }
 
-  #     expect(assigns[:check_in]).to eq check_in
-  #   end
+      expect(assigns[:user]).to eq user
+    end
 
-  #   it "the response status is a success" do
-  #     check_in = create_check_in
+    it "the response status is a success" do
+      user = create_user
 
-  #     get :show, params: { id: check_in.id }, session: { user_id: 1 }
+      get :show, params: { id: user.id }, session: { user_id: 1 }
 
-  #     expect(response.status).to eq 200
-  #   end
+      expect(response.status).to eq 200
+    end
    end
 
   describe "POST #create" do
