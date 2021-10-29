@@ -7,6 +7,7 @@ gem 'faker'
 gem 'pry-rails', '~> 0.3.9'
 gem 'rubocop'
 gem 'rubocop-rails'
+gem 'rails-controller-testing'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
