@@ -1,6 +1,32 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
+  describe "GET #show" do
+    it "renders the show template", :aggregate_failures do
+      user = create_user
+
+      get :show, params: { id: user.id}, session: { user_id: user.id }
+
+      expect(response).to render_template(:show)
+    end
+
+  #   it "assigns @check_in to the correct instance" do
+  #     check_in = create_check_in
+
+  #     get :show, params: valid_user_params, session: { user_id: 1 }
+
+  #     expect(assigns[:check_in]).to eq check_in
+  #   end
+
+  #   it "the response status is a success" do
+  #     check_in = create_check_in
+
+  #     get :show, params: { id: check_in.id }, session: { user_id: 1 }
+
+  #     expect(response.status).to eq 200
+  #   end
+   end
+
   describe "POST #create" do
     describe "with valid attributes" do 
       it "successfully creates a new record with all params passed" do 
