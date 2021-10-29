@@ -1,5 +1,5 @@
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
-/Users/diontherouldejr/.rbenv/versions/2.6.1/bin/ruby -I /Users/diontherouldejr/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20211019-47383-w82646.rb extconf.rb
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211027-17106-1u9s2s9.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -8,11 +8,11 @@ checking for whether -pthread is accepted as LDFLAGS... yes
 creating extconf.h
 creating Makefile
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
-make "DESTDIR=" clean
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
+make DESTDIR\= clean
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
-make "DESTDIR="
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
+make DESTDIR\=
 compiling AbstractMemory.c
 compiling ArrayType.c
 compiling Buffer.c
@@ -38,6 +38,6 @@ compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
-make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20211019-47383-f53yc2
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.4/ext/ffi_c
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20211027-17106-1mobv06

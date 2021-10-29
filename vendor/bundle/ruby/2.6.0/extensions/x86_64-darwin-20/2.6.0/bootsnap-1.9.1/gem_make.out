@@ -1,15 +1,15 @@
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
-/Users/diontherouldejr/.rbenv/versions/2.6.1/bin/ruby -I /Users/diontherouldejr/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20211019-47383-16ywh5w.rb extconf.rb
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211027-17106-i5ypc8.rb extconf.rb
 creating Makefile
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
-make "DESTDIR=" clean
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make DESTDIR\= clean
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
-make "DESTDIR="
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
-make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20211019-47383-uo0w8k/bootsnap
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.9.1/ext/bootsnap
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20211027-17106-1g2ald1/bootsnap

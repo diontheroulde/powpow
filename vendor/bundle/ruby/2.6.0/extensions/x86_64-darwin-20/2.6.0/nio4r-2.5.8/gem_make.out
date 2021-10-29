@@ -1,5 +1,5 @@
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-/Users/diontherouldejr/.rbenv/versions/2.6.1/bin/ruby -I /Users/diontherouldejr/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20211019-45821-1k0bm02.rb extconf.rb
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211027-17106-1vyltku.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -12,11 +12,11 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make "DESTDIR=" clean
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= clean
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make "DESTDIR="
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\=
 compiling bytebuffer.c
 compiling monitor.c
 monitor.c:185:40: warning: implicit conversion loses integer precision: 'VALUE' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
@@ -91,6 +91,6 @@ In file included from nio4r_ext.c:6:
 compiling selector.c
 linking shared-object nio4r_ext.bundle
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
-make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20211019-45821-rkg9qu
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20211027-17106-1m5xcu1

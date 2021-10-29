@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by(username: params[:session][:username])
     return head(:forbidden) unless @user.authenticate(params[:session][:password])
-
     session[:user_id] = @user.id
     redirect_to homepage_path
   end

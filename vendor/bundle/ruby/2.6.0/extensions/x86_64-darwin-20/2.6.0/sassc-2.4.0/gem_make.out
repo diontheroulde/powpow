@@ -1,12 +1,12 @@
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-/Users/diontherouldejr/.rbenv/versions/2.6.1/bin/ruby -I /Users/diontherouldejr/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20211019-41203-znfgsb.rb extconf.rb
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211027-19773-ows8je.rb extconf.rb
 creating Makefile
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR=" clean
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\= clean
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR="
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\=
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20211019-41203-1aeo2vb/sassc
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20211027-19773-ehpxxq/sassc

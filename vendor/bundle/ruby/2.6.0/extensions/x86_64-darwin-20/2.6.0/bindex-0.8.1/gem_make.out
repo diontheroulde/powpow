@@ -1,15 +1,15 @@
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-/Users/diontherouldejr/.rbenv/versions/2.6.1/bin/ruby -I /Users/diontherouldejr/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20211019-45821-iveduq.rb extconf.rb
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/diontherouldejr/.asdf/installs/ruby/2.6.1/bin/ruby -I /Users/diontherouldejr/.asdf/installs/ruby/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20211027-17106-1hk35qe.rb extconf.rb
 creating Makefile
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR=" clean
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR="
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.bundle
 
-current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/comic_query/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20211019-45821-oquroq/skiptrace/internal
+current directory: /Users/diontherouldejr/defenders/projects/phase-4-project/powpow/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20211027-17106-iyboc6/skiptrace/internal
